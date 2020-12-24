@@ -15,7 +15,9 @@ full_index <- seq(from = as.POSIXct("2020-01-31 16:00"), to = as.POSIXct("2020-0
 train_index <- seq(from = as.POSIXct("2020-01-31 16:00"), to = as.POSIXct("2020-05-03 16:00"), by="hour")
 valid_index <- seq(from = as.POSIXct("2020-05-03 17:00"), to = as.POSIXct("2020-05-31 16:00"), by="hour")
 getwd()
-districts <- c("Wanhua.csv")
+districts <- c("Neihu.csv", "Nangang.csv", "Songshan.csv", "Datong.csv",
+               "Wenshan.csv", "Daan.csv", "Beitou.csv", "Zhongshan.csv",
+               "Zhongzheng.csv", "Shilin.csv", "Xinyi.csv", "Wanhua.csv")
 
 for(district in districts) {
   district.name <- gsub(".csv", "", district)
